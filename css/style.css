@@ -230,6 +230,25 @@ nav.main-nav ul a:hover {
 }
 
 
+/***** ABOUT *****/
+
+.about-wrapper {
+    background-image: url('../img/bg_block-about Us.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+    min-height: 700px;
+    display: flex;
+    align-items: center;
+    padding-bottom: 40px;
+}
+
+.about-text {
+    margin-top: 70px;
+    font-size: 20px;
+}
+}
+
 
 /***** MODAL *****/
 
