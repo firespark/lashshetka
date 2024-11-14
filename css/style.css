@@ -46,11 +46,21 @@ ul {
 header,
 main,
 footer {
-    max-width: 1440px;
+    max-width: 1920px;
     box-sizing: border-box;
     margin: 0 auto;
     padding: 0 40px;
 }
+
+.container {
+    max-width: 1648px;
+}
+
+.contat {
+    max-width: 1020px;
+    padding: 0 20px;
+}
+
 
 /***** HEADER *****/
 
