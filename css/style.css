@@ -1,0 +1,243 @@
+/* @font-face {
+    font-family: 'Inter';
+    src: url("../font/Inter/static/Inter_24pt-SemiBoldItalic.ttf");
+    font-style: italic;
+}
+ */
+:root {
+    --dark: #403F3D;
+    --light: #E1D4C9;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Inter';
+    color: var(--light);
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+    letter-spacing: 0.1px;
+    background-color: var(--dark);
+}
+
+body.ohidden {
+    overflow: hidden;
+    margin-right: 17px;
+}
+
+h1 {
+    margin: 0;
+}
+
+img {
+    max-width: 100%;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+header,
+main,
+footer {
+    max-width: 1440px;
+    box-sizing: border-box;
+    margin: 0 auto;
+    padding: 0 40px;
+}
+
+/***** HEADER *****/
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1em;
+}
+
+nav.main-nav ul {
+    display: flex;
+    gap: 40px;
+    list-style: none;
+}
+
+nav.main-nav ul a,
+.menu-link .menu-block-wrapper {
+    position: relative;
+    display: block;
+    color: var(--dark);
+    font-size: 16px;
+    font-weight: 600;
+    text-decoration: none;
+    line-height: 24px;
+}
+
+.menu-link a.menu-block-wrapper {
+    color: var(--dark);
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.menu-link.active .menu-block-wrapper {
+    position: relative;
+    display: block;
+    font-weight: 600;
+}
+
+nav.main-nav ul a:after,
+.menu-link .menu-block-wrapper:after,
+.menu-link.active .menu-block-wrapper:after {
+    position: absolute;
+    left: 0;
+    display: block;
+    width: 0;
+    height: 2px;
+    background-color: var(--dark);
+    content: '';
+    transition: width 0.3s ease-out;
+}
+
+.menu-link.active .menu-block-wrapper:after {
+    width: 100%;
+}
+
+nav.main-nav ul a:hover:after,
+nav.main-nav ul a:focus:after,
+.menu-link .menu-block-wrapper:hover::after,
+.menu-link .menu-block-wrapper:focus::after {
+    width: 100%;
+}
+
+.menu-link .menu-block {
+    display: flex;
+    gap: 8px;
+}
+
+.burger {
+    display: none;
+}
+
+.menu-right {
+    display: none;
+}
+
+
+/***** MODAL *****/
+
+.modal {
+    position: fixed;
+    display: flex;
+    background-color: rgba(64, 63, 61, 0.8);
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 300ms ease-in-out;
+    z-index: 9;
+    overflow-y: auto;
+    inset: 0;
+}
+
+.modal-container {
+    position: relative;
+    width: 800px;
+    margin: auto;
+    padding: 16px;
+    background-color: var(--light);
+    border-radius: 40px;
+}
+
+.modal-container .modal-blocks {
+    display: flex;
+    gap: 20px;
+}
+
+.modal-blocks .modal-left {
+    width: 310px;
+    height: 310px;
+    border-radius: 40px;
+    overflow: hidden;
+}
+
+.modal-blocks .modal-left img {
+    transition: 0.5s ease-out;
+    transform: scale(1.1);
+}
+
+.modal-blocks .modal-left:hover img {
+    transform: scale(1);
+}
+
+.modal-blocks .modal-right {
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+    width: 438px;
+}
+
+.modal-right .modal-info {
+    margin-top: 5px;
+}
+
+.modal-right .modal-title {
+    font-size: 24px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+}
+
+.modal-right .modal-description {
+    margin-top: 13px;
+}
+
+.modal-parameters .tabs {
+    justify-content: flex-start;
+    gap: 7px;
+    margin-top: 8px;
+}
+
+.modal-parameters .tabs .tab.active {
+    cursor: pointer;
+}
+
+.modal-right .modal-total {
+    display: flex;
+    justify-content: space-between;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.modal-right .modal-note {
+    display: flex;
+    gap: 8px;
+    align-items: flex-start;
+    margin-top: 17px;
+    font-size: 10px;
+    line-height: 14px;
+    font-weight: 600;
+    letter-spacing: 0;
+}
+
+.modal-right .modal-note img {
+    width: 16px;
+}
+
+.modal-right .modal-close {
+    margin-top: 10px;
+    padding: 10px;
+    text-align: center;
+    border: 1px solid var(--darkgrey);
+    border-radius: 100px;
+    cursor: pointer;
+    transition: 0.5s ease-out;
+}
+
+.modal-right .modal-close:hover {
+    background-color: var(--darkgrey);
+    color: var(--light);
+}

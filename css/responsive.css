@@ -1,0 +1,146 @@
+@media (min-width: 1200px) {
+
+
+}
+
+@media (max-width: 1199px) {
+
+
+}
+
+@media (max-width: 768px) {
+    nav.main-nav {
+        display: none;
+    }
+
+    .menu-link {
+        display: none;
+    }
+
+    .burger {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 5px;
+        width: 44px;
+        height: 44px;
+        margin-top: -2px;
+        margin-right: -1px;
+        border: 1px solid var(--darkgrey);
+        border-radius: 100%;
+        cursor: pointer;
+        z-index: 4;
+    }
+
+    .burger .line {
+        width: 16px;
+        height: 1.5px;
+        background-color: var(--darkgrey);
+        transition: transform 0.5s;
+    }
+
+    .show-burger .line:first-child{
+        transform: rotate(-45deg) translate(-3px, 100%);
+    }
+
+    .show-burger .line:last-child{
+        transform: rotate(45deg) translate(-3px, -100%);
+    }
+
+
+    .menu-right {
+        position: fixed;
+        top: 90px;
+        right: -100%;
+        display: none;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        width: 100%;
+        height: 100vh;
+        margin-right: -17px;
+        padding: 75px 67px 0 40px;
+        box-sizing: border-box;
+        background-color: var(--light);
+        z-index: 99;
+        overflow-y: auto;
+    }
+
+    .menu-right.opened {
+        display: flex;
+        right: 0;
+    }
+
+    @keyframes showNav {
+        from {
+            right: -100%;
+        }
+        to {
+            right: 0;
+        }
+    }
+
+    .show-nav {
+        animation: showNav 0.5s ease forwards;
+    }
+
+    @keyframes hideNav {
+        from {
+            right: 0;
+        }
+        to {
+            right: -100%;
+        }
+    }
+
+    .hide-nav {
+        animation: hideNav 0.5s ease forwards;
+    }
+
+    .header-container .menu-right nav {
+        display: block;
+    }
+
+    ul.nav-menu {
+        display: flex;
+        flex-direction: column;
+        gap: 70px;
+    }
+
+    ul.nav-menu li {
+        display: block;
+        text-align: center;
+    }
+
+    ul.nav-menu li a,
+    a.menu-block-wrapper {
+        font-size: 32px;
+        font-weight: 600;
+        color: var(--dark);
+        text-decoration: none;
+        letter-spacing: 1.2px;
+    }
+
+    a.menu-block-wrapper {
+        margin-top: 100px;
+        display: block;
+        text-align: center;
+    }
+
+    a.menu-block-wrapper .menu-block {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    a.menu-block-wrapper span {
+        margin-right: 15px;
+    }
+
+    a.menu-block-wrapper img {
+        width: 40px;
+    }
+
+}
+
