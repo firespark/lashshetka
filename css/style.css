@@ -6,6 +6,7 @@
 :root {
     --dark: #000000;
     --light: #d5d5d5;
+    --gold: #e5a946;
 }
 
 html {
@@ -32,8 +33,14 @@ a {
     color: var(--light);
 }
 
-h1 {
+h1,
+.h1 {
     margin: 0;
+    color: var(--gold);
+    font-size: 60px;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 600;
 }
 
 img {
@@ -58,11 +65,32 @@ footer {
     box-sizing: border-box;
 }
 
-.contat {
+.content {
     max-width: 840px;
     margin: 0 auto;
     padding: 0 20px;
     box-sizing: border-box;
+}
+
+.section-title {
+    margin: 40px 0;
+}
+
+.button {
+    color: var(--dark);
+    text-decoration: none;
+    background-image: url('../img/button1.png');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 25px;
+    min-width: 120px;
+    text-align: center;
+    transition: 0.5s ease-out;
+}
+
+.button:hover {
+    background-image: url('../img/button2.png');
 }
 
 
@@ -152,6 +180,55 @@ nav.main-nav ul a:hover {
 .banner .logo img {
     max-width: 440px;
 }
+
+/***** MAIN INFO *****/
+
+.main-info-wrapper {
+    min-height: 644px;
+    background-image: url('../img/pic_block2.png');
+    background-repeat: no-repeat;
+    background-size: auto 100%;
+    background-position: right bottom;
+}
+
+.main-info-text {
+    max-width: 680px;
+    font-size: 20px;
+    padding: 50px 0;
+}
+
+/***** CATEGORIES *****/
+
+.categories-block {
+    display: flex;
+    justify-content: space-between;
+}
+
+.category-item {
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center bottom;
+    width: 33.333333%;
+    height: 640px;
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    padding-bottom: 50px;
+    box-sizing: border-box;
+}
+
+.category-item:nth-child(1) {
+    background-image: url('../img/frame1_lashliner_layers.png');
+}
+
+.category-item:nth-child(2) {
+    background-image: url('../img/frame_lashshetka_layers.png');
+}
+
+.category-item:nth-child(3) {
+    background-image: url('../img/frame1_electro_layers.png');
+}
+
 
 
 /***** MODAL *****/
