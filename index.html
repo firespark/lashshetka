@@ -11,6 +11,7 @@
     <link rel="icon" type="image/x-icon" href="img/favicon.ico">
 
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/responsive.css">
 
     <title>Lashshetka</title>
@@ -25,7 +26,7 @@
                 <nav class="main-nav">
                     <ul>
                         <li><a href="index.html">Главная</a></li>
-                        <li><a href="catalog.html">наши продукты</a></li>
+                        <li><a href="catalog.html">Наши продукты</a></li>
                         <li><a href="rewards.html">Награды</a></li>
                         <li><a href="reviews.html">Отзывы</a></li>
                         <li><a href="articles.html">Полезное</a></li>
@@ -99,23 +100,25 @@
         </section>
 
         <section class="categories">
-            <div class="container">
-                <div class="section-title">
-                    <div class="h1">Наши продукты</div>
-                </div>
+            <div class="categories-wrapper">
+                <div class="container">
+                    <div class="section-title">
+                        <div class="h1">Наши продукты</div>
+                    </div>
 
-                <div class="categories-block">
-                    <div class="category-item">
-                        <a class="button" href="category.html">Lashliner</a>
+                    <div class="categories-block">
+                        <div class="category-item">
+                            <a class="button" href="category.html">Lashliner</a>
+                        </div>
+                        <div class="category-item">
+                            <a class="button" href="category.html">Lashshetka</a>
+                        </div>
+                        <div class="category-item">
+                            <a class="button" href="category.html">ЭлектроКушетки</a>
+                        </div>
                     </div>
-                    <div class="category-item">
-                        <a class="button" href="category.html">Lashshetka</a>
-                    </div>
-                    <div class="category-item">
-                        <a class="button" href="category.html">ЭлектроКушетки</a>
-                    </div>
-                </div>
 
+                </div>
             </div>
         </section>
 
@@ -297,9 +300,11 @@
                 <div class="cta-block">
                     <div class="cta-left">
                         <div class="h3">Свяжитесь с нами</div>
-                    </div>
-                    <div class="cta-left">
-
+                        <p>Aenean sed lectus velit. Pellentesque id interdum mauris. Interdum et malesuada fames ac
+                            ante ipsum primis in faucibus. Fusce faucibus felis elit, sit amet tincidunt est
+                            vehicula id. Duis viverra ligula non leo convallis tincidunt. Vivamus bibendum a ex eget
+                            malesuada. Sed venenatis suscipit dolor, ac accumsan libero vulputate egestas.
+                            Pellentesque leo lorem, mollis ut diam non, condimentum iaculis ante.</p>
                     </div>
                     <div class="cta-right">
                         <form>
@@ -307,19 +312,18 @@
                                 <input type="text" name="name" placeholder="Ваше имя*" required>
                             </div>
                             <div class="form-input">
-                                <input class="form-input" type="email" name="email" placeholder="Email*" required>
+                                <input type="email" name="email" placeholder="Email*" required>
                             </div>
                             <div class="form-input">
-                                <textarea class="form-input" name="message" placeholder="Сообщение*"
-                                    reguired></textarea>
+                                <textarea name="message" placeholder="Сообщение*" reguired></textarea>
                             </div>
-                            <div class="form-input">
+                            <div class="form-checked">
                                 <input name="agreement" id="agreement" type="checkbox" checked required>
                                 <label for="agreement">Даю согласие на <a href="page.html" target="_blank">обработку
                                         персональных данных</a></label>
                             </div>
                             <div class="form-submit">
-                                <button type="submit">Отправить</button>
+                                <button type="submit" class="button">Отправить</button>
                             </div>
                         </form>
                     </div>
@@ -335,7 +339,7 @@
             <nav class="footer-nav">
                 <ul>
                     <li><a href="index.html">Главная</a></li>
-                    <li><a href="catalog.html">наши продукты</a></li>
+                    <li><a href="catalog.html">Наши продукты</a></li>
                     <li><a href="rewards.html">Награды</a></li>
                     <li><a href="reviews.html">Отзывы</a></li>
                     <li><a href="articles.html">Полезное</a></li>
@@ -343,7 +347,9 @@
             </nav>
             <div class="footer-blocks">
                 <div class="footer-block1">
-                    <img src="img/logo.png" alt="">
+                    <a href="index.html">
+                        <img class="footer-logo" src="img/logo.png" alt="">
+                    </a>
                 </div>
                 <div class="footer-block2">
                     <div class="footer-socials socials">
@@ -363,21 +369,23 @@
                 <div class="footer-block3">
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
                     <div class="sertificats">
-                        <a href="#" target="_blank">
-                            <div class="sertificat-item">
+
+                        <div class="sertificat-item">
+                            <a href="#" target="_blank">
                                 <img src="img/reward.jpg" alt="">
-                            </div>
-                        </a>
-                        <a href="#" target="_blank">
-                            <div class="sertificat-item">
+                            </a>
+                        </div>
+
+                        <div class="sertificat-item">
+                            <a href="#" target="_blank">
                                 <img src="img/reward.jpg" alt="">
-                            </div>
-                        </a>
-                        <a href="#" target="_blank">
-                            <div class="sertificat-item">
+                            </a>
+                        </div>
+                        <div class="sertificat-item">
+                            <a href="#" target="_blank">
                                 <img src="img/reward.jpg" alt="">
-                            </div>
-                        </a>
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -386,6 +394,34 @@
             </div>
         </div>
     </footer>
+    <!--<div class="show-form">sopdpoasipo</div>-->
+    <div class="modal" id="modal-form">
+        <div class="modal-container">
+            <div class="modal-close"></div>
+            <div class="modal-inner">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                <form>
+                    <div class="form-input">
+                        <input type="text" name="name" placeholder="Ваше имя*" required>
+                    </div>
+                    <div class="form-input">
+                        <input type="email" name="email" placeholder="Email*" required>
+                    </div>
+                    <div class="form-input">
+                        <textarea name="message" placeholder="Сообщение*" reguired></textarea>
+                    </div>
+                    <div class="form-checked">
+                        <input name="agreement" id="agreement" type="checkbox" checked required>
+                        <label for="agreement">Даю согласие на <a href="page.html" target="_blank">обработку
+                                персональных данных</a></label>
+                    </div>
+                    <div class="form-submit">
+                        <button type="submit" class="button">Отправить</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
 
     <script src="js/menu.js"></script>
     <script src="js/modal.js"></script>
