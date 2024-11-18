@@ -157,6 +157,7 @@ nav.main-nav ul a:hover {
 .socials {
     display: flex;
     gap: 10px;
+    align-items: center;
 }
 
 .socials .icon {
@@ -228,8 +229,9 @@ footer {
 
 footer .sertificats {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     gap: 10px;
+    width: fit-content;
 }
 
 footer .sertificat-item {

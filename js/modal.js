@@ -1,10 +1,11 @@
+const showModalElem = document.querySelector('.show-form');
 const modalElem = document.querySelector('#modal-form');
 
 const closeModal = event => {
 
     const target = event.target;
 
-    if ( target === modalElem ||
+    if (target === modalElem ||
         ('.modal-close' && target.closest('.modal-close')) ||
         event.code === 'Escape'
     ) {
@@ -29,15 +30,17 @@ const openModal = (e) => {
     window.addEventListener('keydown', closeModal)
 };
 
+if (showModalElem && modalElem) {
+    modalElem.addEventListener('click', closeModal);
 
-modalElem.addEventListener('click', closeModal);
+    showModalElem.addEventListener('click', function (event) {
 
-document.querySelector('.show-form').addEventListener('click', function(event) {
+        let productElement = event.target.closest('.show-form');
 
-    let productElement = event.target.closest('.show-form');
+        if (productElement && this.contains(productElement)) {
 
-    if (productElement && this.contains(productElement)) {
+            openModal(event);
+        }
+    });
+}
 
-        openModal(event);
-    }
-});
