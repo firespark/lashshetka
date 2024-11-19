@@ -120,10 +120,15 @@
     align-items: center;
 }
 
-.reviews-slider,
-.reviews-slider-no-action {
+.reviews-slider {
     margin-top: 100px;
 }
+
+.reviews-slider-no-action {
+    max-width: 900px;
+    margin: 100px auto 0;
+}
+
 
 .reviews-slider .slides {
     display: flex;
