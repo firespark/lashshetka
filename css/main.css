@@ -86,11 +86,11 @@
 .reward-item {
     background-image: url('../img/frame2_small.png');
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: 100% 100%;
     background-position: top;
     width: 222px;
     height: 336px;
-    padding: 15px 15px 20px;
+    padding: 15px;
     box-sizing: border-box;
 }
 
@@ -120,7 +120,8 @@
     align-items: center;
 }
 
-.reviews-slider {
+.reviews-slider,
+.reviews-slider-no-action {
     margin-top: 100px;
 }
 
@@ -132,7 +133,8 @@
     margin: 0 auto;
 }
 
-.reviews-slider .slide {
+.reviews-slider .slide,
+.reviews-slider-no-action .slide {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -142,7 +144,12 @@
     transition: transform 0.5s ease;
 }
 
-.reviews-slider .slide-img {
+.reviews-slider-no-action .slide {
+    margin-bottom: 40px;
+}
+
+.reviews-slider .slide-img,
+.reviews-slider-no-action .slide-img {
     background-image: url('../img/Frame-Ellipse.png');
     background-repeat: no-repeat;
     background-size: contain;
@@ -154,7 +161,8 @@
     flex: 0 0 270px;
 }
 
-.reviews-slider .slide-img img {
+.reviews-slider .slide-img img,
+.reviews-slider-no-action .slide-img img {
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -162,7 +170,8 @@
     border-radius: 100%;
 }
 
-.reviews-slider .slide-text {
+.reviews-slider .slide-text,
+.reviews-slider-no-action .slide-text {
     max-width: 500px;
 }
 
@@ -173,30 +182,13 @@
     gap: 50px;
 }
 
-.reviews-slider .slider-nav {
-    width: 25px;
-    height: 55px;
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: center;
-    cursor: pointer;
-}
-
-.reviews-slider .slider-nav.left {
-    background-image: url('../img/nav-left.png');
-}
-
-.reviews-slider .slider-nav.right {
-    background-image: url('../img/nav-right.png');
-}
-
 /***** CTA *****/
 
 .cta-block {
     display: flex;
-  justify-content: center;
-  gap: 80px;
-  margin-top: 80px;
+    justify-content: center;
+    gap: 80px;
+    margin-top: 80px;
 }
 
 .cta-left {

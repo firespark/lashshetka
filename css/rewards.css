@@ -1,0 +1,50 @@
+.company-about {
+    margin-top: 4rem;
+}
+
+.company-sertificats {
+    position: relative;
+    max-width: 1000px;
+    margin: 4rem auto 0;
+}
+
+.sertificats-slider {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    max-width: 900px;
+    margin: 2rem auto 0;
+}
+
+.sertificats-slider .slides {
+    display: flex;
+    transition: transform 0.3s ease-in-out;
+}
+
+.sertificats-slider .slide {
+    min-width: calc(100% / 4);
+    background-image: url('../img/frame2_small.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: top;
+    width: 222px;
+    height: 336px;
+    padding: 15px;
+    box-sizing: border-box;
+}
+
+.sertificats-slider .slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    border-radius: 5px;
+}
+
+.company-sertificats .slider-navigation {
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    top: 50%;
+    width: 100%;
+}

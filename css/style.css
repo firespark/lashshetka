@@ -94,7 +94,7 @@ footer {
 
 .content {
     max-width: 840px;
-    margin: 0 auto;
+    margin: 2rem auto;
     padding: 0 20px;
     box-sizing: border-box;
 }
@@ -119,6 +119,20 @@ footer {
 
 .button:hover {
     background-image: url('../img/button2.png');
+}
+
+.button-order {
+    margin-top: 4rem;
+}
+
+.button-order a {
+    font-size: 20px;
+    min-width: 180px;
+    background-size: 100% 100%;
+    padding: 15px;
+    text-transform: uppercase;
+    margin: 0 auto;
+    max-width: fit-content;
 }
 
 /***** HEADER *****/
@@ -234,7 +248,7 @@ footer {
     min-height: 500px;
     box-sizing: border-box;
     padding-top: 4rem;
-    margin-top: 4rem;
+    margin-top: 6rem;
 }
 
 .footer-nav ul {
@@ -456,6 +470,24 @@ footer .sertificat-item img {
 
 .breadcrumbs a {
     color: var(--gold);
+}
+
+/***** SLIDER NAV *****/
+.slider-nav {
+    width: 25px;
+    height: 55px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    cursor: pointer;
+}
+
+.slider-nav.left {
+    background-image: url('../img/nav-left.png');
+}
+
+.slider-nav.right {
+    background-image: url('../img/nav-right.png');
 }
 
 /***** PAGE *****/
