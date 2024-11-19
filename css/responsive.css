@@ -34,6 +34,41 @@
         padding: 0 20px;
     }
 
+    .product-slider .slides {
+        max-width: 600px;
+    }
+
+    .options-slider .slides {
+        max-width: 90%;
+        overflow: hidden;
+        margin: 0 auto;
+    }
+
+    .options-slider .slide {
+        width: auto;
+        height: auto;
+        padding: 18px 15px 20px;
+        text-align: center;
+    }
+
+    .options-slider .slide img {
+        width: 96%;
+        height: auto;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+    }
+
+    .sertificats-slider .slides {
+        max-width: 90%;
+        overflow: hidden;
+        margin: 0 auto;
+    }
+
+    .materials-item-img {
+        width: 150px;
+        height: 150px;
+    }
+
 }
 
 @media (max-width: 768px) {
@@ -147,6 +182,16 @@
         text-decoration: none;
     }
 
+    .button-order a {
+        font-size: 16px;
+        padding: 10px;
+        min-width: 120px;
+    }
+
+    .show-more-button-block a {
+        margin: 0 auto;
+    }
+
     .banner {
         background-size: auto;
         min-height: auto;
@@ -198,23 +243,31 @@
         background-position: -250px;
     }
 
-    .reviews-slider .slides {
+    .reviews-slider .slides,
+    .reviews-slider-no-action .slides {
         max-width: 100%;
     }
 
-    .reviews-slider .slide {
+    .reviews-slider .slide,
+    .reviews-slider-no-action .slide {
         display: block;
     }
 
-    .reviews-slider .slide-img {
+    .reviews-slider .slide-img,
+    .reviews-slider-no-action .slide-img {
         width: 200px;
         height: 200px;
         margin: 2rem auto;
     }
 
-    .reviews-slider .slide-text {
+    .reviews-slider .slide-text,
+    .reviews-slider-no-action .slide-text {
         max-width: 100%;
         text-align: center;
+    }
+
+    .reviews-slider .slider-navigation {
+        gap: 30px;
     }
 
     .cta-left {
@@ -225,6 +278,39 @@
         flex-direction: column;
         padding: 0 20px;
         text-align: center;
+    }
+
+    .product-slider .slides {
+        max-width: 400px;
+    }
+
+    .product-description,
+    .product-attributes,
+    .product-materials {
+        font-size: 14px;
+    }
+
+    .materials {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .news-item {
+        flex-direction: column;
+    }
+
+    .news-left {
+        width: 100%;
+    }
+
+    .sertificats-slider .slide {
+        min-width: calc(100% / 2);
+        width: 50%;
+        height: auto;
+    }
+
+    .products-block {
+        flex-direction: column;
+        align-items: center;
     }
 
     footer {
@@ -267,4 +353,22 @@
         max-width: 150px;
     }
 
+    .slider-nav {
+        width: 20px;
+        height: 45px;
+    }
+
+}
+
+@media (max-width: 580px) {
+    .options-slider .slide {
+        min-width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+
+    .product-slider .slides {
+        max-width: 320px;
+    }
 }

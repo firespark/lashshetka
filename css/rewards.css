@@ -28,7 +28,7 @@
     background-size: 100% 100%;
     background-position: top;
     width: 222px;
-    height: 336px;
+    height: auto;
     padding: 15px;
     box-sizing: border-box;
 }
