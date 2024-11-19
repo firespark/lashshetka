@@ -1,12 +1,12 @@
 .product-slider {
     position: relative;
+    overflow: hidden;
     max-width: 900px;
     margin: 60px auto 0;
 }
 
 .product-slider .slides {
     display: flex;
-    overflow: hidden;
     width: 100%;
     max-width: 800px;
     margin: 0 auto;

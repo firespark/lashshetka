@@ -509,6 +509,53 @@ footer .sertificat-item img {
     background-image: url('../img/nav-right.png');
 }
 
+.lb-outerContainer {
+    background: transparent;
+}
+
+.lb-container {
+    box-sizing: border-box
+}
+
+.lightbox .lb-image {
+    box-sizing: border-box;
+    border: 3px solid var(--gold);
+    border-radius: 10px;
+}
+
+.lb-nav a {
+
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    cursor: pointer;
+}
+
+.lb-nav a.lb-prev {
+    background-image: url('../img/nav-left.png');
+
+    width: 25px;
+    background-size: contain;
+    margin-left: 10px;
+}
+
+.lb-nav a.lb-next {
+    background-image: url('../img/nav-right.png');
+
+    width: 25px;
+    background-size: contain;
+    margin-right: 10px;
+}
+
+.lb-data .lb-details {
+    width: 100%;
+    display: contents;
+}
+
+.lb-data .lb-close {
+    display: none;
+}
+
 /***** PAGE *****/
 
 .page-top-wrapper {
