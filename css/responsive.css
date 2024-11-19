@@ -4,6 +4,10 @@
         box-sizing: border-box;
     }
 
+    nav.main-nav ul {
+        justify-content: flex-start;
+    }
+
     .main-info-text {
         max-width: 400px;
     }
@@ -194,21 +198,21 @@
         background-position: -250px;
     }
 
-    .slides {
+    .reviews-slider .slides {
         max-width: 100%;
     }
 
-    .slide {
+    .reviews-slider .slide {
         display: block;
     }
 
-    .slide-img {
+    .reviews-slider .slide-img {
         width: 200px;
         height: 200px;
         margin: 2rem auto;
     }
 
-    .slide-text {
+    .reviews-slider .slide-text {
         max-width: 100%;
         text-align: center;
     }

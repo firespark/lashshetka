@@ -1,4 +1,4 @@
-const showModalElem = document.querySelector('.show-form');
+const showModalElems = document.querySelectorAll('.show-form');
 const modalElem = document.querySelector('#modal-form');
 
 const closeModal = event => {
@@ -30,17 +30,23 @@ const openModal = (e) => {
     window.addEventListener('keydown', closeModal)
 };
 
-if (showModalElem && modalElem) {
+if (showModalElems && modalElem) {
     modalElem.addEventListener('click', closeModal);
 
-    showModalElem.addEventListener('click', function (event) {
+    showModalElems.forEach(element => {
+        element.addEventListener('click', function (event) {
 
-        let productElement = event.target.closest('.show-form');
+            event.preventDefault();
 
-        if (productElement && this.contains(productElement)) {
+            let productElement = event.target.closest('.show-form');
 
-            openModal(event);
-        }
+            if (productElement && this.contains(productElement)) {
+
+                openModal(event);
+            }
+        });
     });
+
+
 }
 

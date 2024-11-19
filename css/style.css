@@ -34,6 +34,16 @@ a {
     color: var(--light);
 }
 
+a.a-gold {
+    color: var(--gold);
+    text-decoration: none;
+}
+
+a.a-gold:hover {
+    color: var(--gold);
+    text-decoration: underline;
+}
+
 h1,
 .h1 {
     margin: 0;
@@ -44,6 +54,17 @@ h1,
     font-weight: 600;
 }
 
+h2,
+.h2 {
+    margin: 0 0 1rem;
+    color: var(--gold);
+    font-size: 30px;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 400;
+}
+
+h3,
 .h3 {
     font-size: 22px;
     font-weight: bold;
@@ -123,12 +144,15 @@ footer {
 nav.main-nav {
     display: flex;
     align-items: center;
+    width: 100%;
 }
 
 nav.main-nav ul {
     display: flex;
     gap: 40px;
     list-style: none;
+    width: 100%;
+    justify-content: center;
 }
 
 nav.main-nav ul li {
@@ -184,8 +208,20 @@ nav.main-nav ul a:hover {
     min-height: 542px;
 }
 
+.banner.banner-inner {
+    background-image: url('../img/bg_banner_inner.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    min-height: 210px;
+}
+
 .banner .logo img {
     max-width: 440px;
+}
+
+.banner.banner-inner .logo img {
+    max-width: 200px;
 }
 
 /***** FOOTER *****/
@@ -205,7 +241,7 @@ footer {
     list-style: none;
     display: flex;
     gap: 35px;
-    justify-content: center;
+    justify-content: right;
     margin-bottom: 2rem;
 }
 
@@ -237,11 +273,11 @@ footer .sertificats {
 footer .sertificat-item {
     background-image: url('../img/frame2_small.png');
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: 100% 100%;
     background-position: top;
     width: 120px;
     height: 178px;
-    padding: 10px 10px 15px;
+    padding: 10px;
     box-sizing: border-box;
 }
 
@@ -407,4 +443,33 @@ footer .sertificat-item img {
     border: none;
     font-size: 16px;
     cursor: pointer;
+}
+
+/***** BREADCRUMBS *****/
+
+.breadcrumbs {
+    margin: 2rem 0 4rem;
+    text-align: center;
+    text-transform: uppercase;
+    color: var(--gold);
+}
+
+.breadcrumbs a {
+    color: var(--gold);
+}
+
+/***** PAGE *****/
+
+.page-top-wrapper {
+    background-image: url('../img/line_header.png');
+    background-position: bottom left;
+    background-size: auto;
+    background-repeat: no-repeat;
+    padding: .5rem 0 4rem;
+}
+
+.section-subtitle {
+    text-align: center;
+    font-size: 26px;
+    text-transform: uppercase;
 }
